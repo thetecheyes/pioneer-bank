@@ -1,17 +1,37 @@
+body {
+    padding: 150px 0;
+}
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
-.pioneer-bank-login {
-    padding: 150px 0;
-}
-.login-form {
+.login-form, .bank-form {
     margin-top: 100px;
     padding: 50px;
-    box-shadow: 3px 3px 20px gray;
+    box-shadow: 0px 0px 15px gray;
     border-radius: 10px;
 }
-.login-form input:focus {
+.login-form input:focus, .bank-form input:focus {
     outline: 0;
     border-color: #28a745;
     box-shadow: none;
+}
+#transaction-area {
+    /* display: none; */
+}
+.deposit {
+    background-color: slateblue;
+}
+.withdraw {
+    background-color: lightsalmon;
+}
+.balance {
+    background-color: orange;
+}
+.status {
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.status h5 {
+    margin-bottom: 20px;
 }

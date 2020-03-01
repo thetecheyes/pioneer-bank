@@ -26,29 +26,84 @@ Date: 01/03/2020
 
     <!-- Pioneer Login Form -->
 
-    <div class="container">
-        <div class="pioneer-bank-login">
+    <!-- <div id="pioneer-login-area" class="container">
+        Form Title
+        <div class="form-title">
+            <h1 class="text-center">Welcome to the Pioneer Bank</h1>
+        </div>
 
-            <!-- Form Title -->
-            <div class="form-title">
-                <h1 class="text-center">Welcome to the Pioneer Bank</h1>
+        Login Form
+        <div class="login-form">
+            <h3>Login</h3>
+            <br>
+            <input class="form-control" type="text" placeholder="Email">
+            <br>
+            <input class="form-control" type="password" placeholder="Password">
+            <br>
+            <button id="signIn" class="btn btn-success">Enter</button>
+        </div>
+    </div> -->
+
+    <div id="transaction-area" class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ 00</h2>
+                </div>
             </div>
-
-            <!-- Login Form -->
-            <div class="login-form">
-                <h3>Login</h3>
-                <br>
-                <input class="form-control" type="text" placeholder="Email">
-                <br>
-                <input class="form-control" type="password" placeholder="Password">
-                <br>
-                <button id="login-pass" class="btn btn-success">Enter</button>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ 00</h2>
+                </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bank-form">
+                    <h4>Deposit</h4>
+                    <br>
+                    <input class="form-control" type="text" placeholder="$ Amount you want to deposit">
+                    <br>
+                    <button class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bank-form">
+                    <h4>Withdraw</h4>
+                    <br>
+                    <input class="form-control" type="text" placeholder="$ Amount you want to withdraw">
+                    <br>
+                    <button class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
 
 
+
+    <script>
+        const loginBtn = document.getElementById("signIn");
+        loginBtn.addEventListener("click", function () {
+            const loginArea = document.getElementById("pioneer-login-area");
+            loginArea.style.display = "none";
+
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
+        })
+    </script>
 </body>
 
 </html>
